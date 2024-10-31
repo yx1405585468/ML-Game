@@ -38,7 +38,7 @@ if __name__ == '__main__':
     print(mean_squared_error(y_test, pre))
 
     param = {'n_estimators': 100, 'max_features': 0.2, 'max_depth': 12, 'min_samples_leaf': 2}
-    model = ExtraTreesRegressor(**param)
+    model = RandomForestRegressor(**param)
     model.fit(X_train, y_train)
     pre = model.predict(X_test)
     print(mean_squared_error(y_test, pre))
