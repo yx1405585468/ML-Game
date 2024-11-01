@@ -1,10 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import KFold
 
-# 设置 Pandas 显示选项以显示所有列
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
-
 # 打上intel优化补丁
 from sklearnex import patch_sklearn
 
